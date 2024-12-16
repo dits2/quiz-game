@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Spiel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Start Container -->
+        <div id="start-container" class="fade-in">
+            <h1>Quiz</h1>
+            <p>Geben Sie einen Namen ein, um zu beginnen:</p>
+            <input type="text" id="player-name" placeholder="Namen..." />
+            <button id="start-button">Spiel starten</button>
+        </div>
+
+        <!-- Question Container -->
+        <div id="question-container" class="hidden">
+            <h1>Quiz Spiel</h1>
+            <p id="player-greeting"></p>
+            <p id="question">Die Frage erscheint hier</p>
+            <div id="options">
+                <!-- Optionen für Antworten werden hier durch JavaScript hinzugefügt -->
+            </div>
+            <button id="next-button" class="hidden">Nächste Frage</button>
+            <p id="score">Punkte: 0</p>
+        </div>
+
+        <!-- End Container -->
+        <div id="end-container" class="hidden fade-in">
+            <h1>Spiel beendet!</h1>
+            <p id="final-score">Endstand: 0</p>
+            <button id="restart-button">Nochmal spielen</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

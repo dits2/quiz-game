@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, #f9c4d1, #f1f2b5); /* Soft pastel background */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Input and Button Styles */
+input[type="text"] {
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4e42;
+    transform: translateY(-5px);
+}
+
+#start-button, #restart-button {
+    background-color: #4caf50;
+}
+
+#start-button:hover, #restart-button:hover {
+    background-color: #45a049;
+}
+
+.option-button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 25px;
+    background-color: #ffde59;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: #ffb82d;
+    transform: scale(1.1);
+}
+
+#next-button {
+    background-color: #42a5f5;
+    margin-top: 20px;
+}
+
+#next-button:hover {
+    background-color: #2196f3;
+}
+
+/* Score Styles */
+#score {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
